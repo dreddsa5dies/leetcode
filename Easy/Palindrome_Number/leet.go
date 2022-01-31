@@ -2,6 +2,17 @@
 Runtime: 60 ms, faster than 5.42% of Go online submissions for Palindrome Number.
 Memory Usage: 6.2 MB, less than 18.56% of Go online submissions for Palindrome Number.
 */
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Println(isPalindrome(1211))
+}
+
 func isPalindrome(x int) bool {
 	fin := true
 	switch {

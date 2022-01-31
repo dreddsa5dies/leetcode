@@ -2,6 +2,17 @@
 Runtime: 0 ms, faster than 100.00% of Go online submissions for Longest Common Prefix.
 Memory Usage: 2.3 MB, less than 99.47% of Go online submissions for Longest Common Prefix.
 */
+package main
+
+import (
+	"fmt"
+	"sort"
+	"strings"
+)
+
+func main() {
+	fmt.Println(longestCommonPrefix([]string{"1", "2"}))
+}
 
 func longestCommonPrefix(strs []string) string {
 	if len(strs) == 1 {

@@ -2,6 +2,16 @@
 Runtime: 11 ms, faster than 47.04% of Go online submissions for Roman to Integer.
 Memory Usage: 3 MB, less than 100.00% of Go online submissions for Roman to Integer.
 */
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Println(romanToInt("1211"))
+}
+
 func romanToInt(s string) int {
 	ro := map[string]int{
 		"I": 1,
