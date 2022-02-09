@@ -4,7 +4,7 @@
 
 ## Recording format: Easy/Two_Sum 
 * Easy - level task  
-* Two_Sum - name  
+* Two Sum - name  
 
 ## License
 This project is licensed under MIT license. Please read the [LICENSE](https://github.com/dreddsa5dies/automateGo/tree/master/LICENSE.md) file.
