@@ -38,7 +38,7 @@ func isPalindrome(x int) bool {
 		for i, j := 0, len(tmp2)-1; i < j; i, j = i+1, j-1 {
 			tmp2[i], tmp2[j] = tmp2[j], tmp2[i]
 		}
-		for k, _ := range tmp1 {
+		for k := range tmp1 {
 			if tmp1[k] != tmp2[k] {
 				fin = false
 				break
