@@ -8,9 +8,7 @@ import (
 	"strings"
 )
 
-func main() {
-
-}
+func main() {}
 
 func isPalindrome(s string) bool {
 	fin := true
