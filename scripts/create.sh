@@ -1,6 +1,9 @@
 #!/bin/bash
 
-dir_names=$1
+echo "Give a directory name to create:"    
+read NEW_DIR    
+ORIG_DIR=$(pwd)
+
 path_to_files='/home/dreddsa/go/src/github.com/dreddsa5dies/leetcode/scripts/tmp/'
 
 if [ ! -d $path_to_files ]; then
@@ -8,14 +11,7 @@ if [ ! -d $path_to_files ]; then
         exit 1;
 fi
 
-if [ -d $dir_names ]; then
-        echo "$dir_names is exists";
-        exit 1;
-fi
-
-
-echo "Creating $i and copying over files..."
-mkdir $dir_names
+mkdir "${ORIG_DIR}/${NEW_DIR}"
 for i in $(ls $path_to_files); do
-    cp -rf ${path_to_files}${i} ${dir_names}/${dir_names}-$i
+    cp ${path_to_files}${i} "${ORIG_DIR}/${NEW_DIR}"/$i
 done
