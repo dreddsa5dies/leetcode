@@ -15,5 +15,3 @@ mkdir "${ORIG_DIR}/${NEW_DIR}"
 for i in $(ls $path_to_files); do
     cp ${path_to_files}${i} "${ORIG_DIR}/${NEW_DIR}"/$i
 done
-
-cd "${ORIG_DIR}/${NEW_DIR}"
