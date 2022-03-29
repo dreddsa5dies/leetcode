@@ -1,0 +1,1 @@
+![Ex1](https://assets.leetcode.com/uploads/2021/01/18/pathsum1.jpg "tree") 
