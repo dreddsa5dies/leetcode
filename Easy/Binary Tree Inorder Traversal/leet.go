@@ -4,11 +4,7 @@ Memory Usage: 2 MB, less than 87.04% of Go online submissions for Binary Tree In
 */
 package main
 
-import "fmt"
-
-func main() {
-	fmt.Println()
-}
+func main() {}
 
 // Definition for a binary tree node.
 type TreeNode struct {
