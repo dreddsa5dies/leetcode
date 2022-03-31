@@ -19,10 +19,10 @@ func preorderTraversal(root *TreeNode) []int {
 	var preorder func(node *TreeNode)
 	preorder = func(node *TreeNode) {
 		if node != nil {
-			preorder(node.Left)
 
 			fin = append(fin, node.Val)
 
+			preorder(node.Left)
 			preorder(node.Right)
 		}
 	}
