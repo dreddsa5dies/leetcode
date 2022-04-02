@@ -3,10 +3,10 @@ package main
 func main() {}
 
 // definition for a binary tree node.
-type treenode struct {
-	val   int
-	left  *treenode
-	right *treenode
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
 }
 
 /*

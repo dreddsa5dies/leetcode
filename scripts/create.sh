@@ -11,7 +11,7 @@ if [ ! -d $path_to_files ]; then
         exit 1;
 fi
 
-mkdir "${ORIG_DIR}/${NEW_DIR}"
+mkdir "${ORIG_DIR}/tasks/${NEW_DIR}"
 for i in $(ls $path_to_files); do
-    cp ${path_to_files}${i} "${ORIG_DIR}/${NEW_DIR}"/$i
+    cp ${path_to_files}${i} "${ORIG_DIR}/tasks/${NEW_DIR}"/$i
 done
